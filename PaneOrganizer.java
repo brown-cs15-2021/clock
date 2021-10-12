@@ -25,7 +25,7 @@ public class PaneOrganizer {
     return this.root;
   }
 
-  public void setupTimeline() {
+  private void setupTimeline() {
     KeyFrame kf = new KeyFrame(Duration.seconds(1),
                               (ActionEvent e) -> this.updateLabel());
     Timeline timeline = new Timeline(kf);
